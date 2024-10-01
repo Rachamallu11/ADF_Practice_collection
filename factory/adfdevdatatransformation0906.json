@@ -1,0 +1,9 @@
+{
+	"name": "adfdevdatatransformation0906",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b259299b-11e1-4b86-9311-3796d38444d4",
+		"tenantId": "67ddb8ca-8a1f-438d-90ea-5c39ba0358c9"
+	}
+}

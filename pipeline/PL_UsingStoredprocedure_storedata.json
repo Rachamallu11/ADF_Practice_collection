@@ -1,0 +1,64 @@
+{
+	"name": "PL_UsingStoredprocedure_storedata",
+	"properties": {
+		"activities": [
+			{
+				"name": "Stored procedure1",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[InsertCustomer]",
+					"storedProcedureParameters": {
+						"CustomerID": {
+							"value": {
+								"value": "@pipeline().parameters.customerid",
+								"type": "Expression"
+							},
+							"type": "Int32"
+						},
+						"FirstName": {
+							"value": {
+								"value": "@pipeline().parameters.firstname",
+								"type": "Expression"
+							},
+							"type": "String"
+						},
+						"LastName": {
+							"value": {
+								"value": "@pipeline().parameters.lastname",
+								"type": "Expression"
+							},
+							"type": "String"
+						}
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_SQL_COPY_DATA",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"parameters": {
+			"customerid": {
+				"type": "int"
+			},
+			"firstname": {
+				"type": "string"
+			},
+			"lastname": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2024-09-29T10:49:44Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

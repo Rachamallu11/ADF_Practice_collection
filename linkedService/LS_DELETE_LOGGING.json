@@ -1,0 +1,13 @@
+{
+	"name": "LS_DELETE_LOGGING",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "This logging is for the delete file will be placed there ",
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": "DefaultEndpointsProtocol=https;AccountName=adlsdevtransformation;EndpointSuffix=core.windows.net;",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDE4OENDMjJGLUUyRjctNDE2Ny04NURFLTAxM0M3OTFGNDM0Rl9kZjJhZmNiMy03ZjkzLTRkZDAtYWNlNi0xZjBjYWZlODc0ZmYiDQp9"
+		}
+	}
+}
