@@ -1,0 +1,57 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adfdevdatatransformation0906"
+		},
+		"LS_ADLS_BULK_CSV_accountKey": {
+			"value": ""
+		},
+		"LS_ADLS_COPY_ALL_CSV_accountKey": {
+			"value": ""
+		},
+		"LS_ADLS_RAW_accountKey": {
+			"value": ""
+		},
+		"LS_COPY_CSV_PARAM_accountKey": {
+			"value": ""
+		},
+		"LS_DELETE_LOGGING_connectionString": {
+			"value": ""
+		},
+		"LS_SINK_ADLS_accountKey": {
+			"value": ""
+		},
+		"LS_SQL_COPY_DATA_password": {
+			"value": ""
+		},
+		"LS_ADLS_BULK_CSV_properties_typeProperties_url": {
+			"value": "https://adlsdevdatamovinghere2.dfs.core.windows.net/"
+		},
+		"LS_ADLS_COPY_ALL_CSV_properties_typeProperties_url": {
+			"value": "https://adlsdevtransformation.dfs.core.windows.net/"
+		},
+		"LS_ADLS_RAW_properties_typeProperties_url": {
+			"value": "https://adlsdevtransformation.dfs.core.windows.net/"
+		},
+		"LS_COPY_CSV_PARAM_properties_typeProperties_url": {
+			"value": "https://adlsdevtransformation.dfs.core.windows.net/"
+		},
+		"LS_RESTAPI_properties_typeProperties_url": {
+			"value": "https://retoolapi.dev/5yDVOt/data"
+		},
+		"LS_SINK_ADLS_properties_typeProperties_url": {
+			"value": "https://adlsdevdatamovinghere2.dfs.core.windows.net/"
+		},
+		"LS_SQL_COPY_DATA_properties_typeProperties_server": {
+			"value": "DESKTOP-IBGQDC8\\SQLEXPRESS"
+		},
+		"LS_SQL_COPY_DATA_properties_typeProperties_database": {
+			"value": "AdventureWorks2022"
+		},
+		"LS_SQL_COPY_DATA_properties_typeProperties_userName": {
+			"value": "sa"
+		}
+	}
+}
