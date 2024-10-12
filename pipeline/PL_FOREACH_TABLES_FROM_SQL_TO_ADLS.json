@@ -1,5 +1,5 @@
 {
-	"name": "PL_CPTABLES_FROM_SQL_TO_ADLS",
+	"name": "PL_FOREACH_TABLES_FROM_SQL_TO_ADLS",
 	"properties": {
 		"activities": [
 			{
